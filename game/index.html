@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:,">
+<title>Ladle &amp; Lantern — a night-kitchen cooking game</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #17100b; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #game { width: min(100vw, 160vh); aspect-ratio: 16 / 10; display: block; background: #8a5a30; }
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800" aria-label="Ladle and Lantern: walk the kitchen with WASD or the arrow keys, press E to work a station, serve the orders on the board before their patience runs out"></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
